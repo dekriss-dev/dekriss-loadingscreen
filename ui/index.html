@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dekriss_loadingscreen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="pumpkins">
+            <div data-aos="fade-right" data-aos-duration="750" class="left">
+                <img src="./img/leftimg.png">
+            </div>
+            <div data-aos="fade-left" data-aos-duration="750" class="right">
+                <img src="./img/rightimg.png">
+            </div>
+        </div>
+        <div class="text-wrapper">
+            <p class="server-name">EXAMPLE RP</p>
+            <h1>LOADING...</h1>
+            <p class="server-desc">Loading server assets...</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="music-wrapper">
+            <img src="./img/crybaby.jpeg">
+            <div class="music-text">
+                <h2>Cry Baby</h2>
+                <span>Clean Bandit, Anne-Marie, David Guetta</span>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-music" src="./music.mp3" autoplay loop></audio>
+
+    <script>
+        AOS.init();
+        const audio = document.getElementById('background-music');
+        audio.volume = 0.2;
+    </script>
+</body>
+</html>
